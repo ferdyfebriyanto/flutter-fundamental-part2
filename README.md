@@ -37,6 +37,18 @@ Jika Anda coba klik/tap pada gambar, maka angka di bawah akan terus bertambah. M
 
 ![Menerapkan Input Widget dan Forms](./images/02.png)
 
+* Menggunakan GlobalKey adalah cara yang disarankan untuk mengakses formulir. Namun, jika Anda memiliki pohon widget yang lebih kompleks, Anda bisa menggunakan metode Form.of() untuk mengakses formulir di dalam widget bersarang.
+
+* TextFormField membungkus TextField dan mengintegrasikannya dengan Formulir terlampir. Ini menyediakan fungsionalitas tambahan, seperti validasi dan integrasi dengan widget FormField lainnya.
+
+* Validasi input dengan menyediakan fungsi validator() ke TextFormField. Jika input pengguna tidak valid, fungsi validator mengembalikan String yang berisi pesan kesalahan. Jika tidak ada kesalahan, validator harus mengembalikan null.
+
+* AddListener() berfungsi untuk mencetak nilai terbaru, dengarkan controller untuk perubahan.
+
+
+
+
+
 
 
 
