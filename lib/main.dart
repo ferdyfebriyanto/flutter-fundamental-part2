@@ -1,5 +1,7 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_fundamental_3/basic_gesture/onTap.dart';
+import 'package:flutter_fundamental_3/custom_input/input_fields.dart';
 import 'package:flutter_fundamental_3/forms.dart';
 
 void main() {
@@ -50,6 +52,9 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  final TextEditingController _controller = TextEditingController.fromValue(
+      const TextEditingValue(text: "isi angka saja"));
+
   int _counter = 0;
 
   void _incrementCounter() {
@@ -77,7 +82,27 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: const FormContoh(),
+      body: Container(
+        child: Form(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: <Widget>[
+              VerificationCodeFormField(controller: _controller),
+              Builder(
+                builder: (BuildContext subContext) => ElevatedButton(
+                  onPressed: () {
+                    final valid = Form.of(subContext)?.validate();
+                    if (kDebugMode) {
+                      print("valid: $valid");
+                    }
+                  },
+                  child: const Text("validate"),
+                ),
+              )
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

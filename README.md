@@ -45,6 +45,14 @@ Jika Anda coba klik/tap pada gambar, maka angka di bawah akan terus bertambah. M
 
 * AddListener() berfungsi untuk mencetak nilai terbaru, dengarkan controller untuk perubahan.
 
+<hr>
+
+## Praktikum 3: Menerapkan Custom Input dan FormField Widget
+
+![Menerapkan Input Widget dan Forms](./images/03.png)
+
+Pada praktikum ini, menerapkan custom input angka. Inputannya selayaknya PIN yang memiliki panjang 6 karakter.
+
 
 
 
