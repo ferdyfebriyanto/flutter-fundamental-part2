@@ -33,6 +33,12 @@ Jika Anda coba klik/tap pada gambar, maka angka di bawah akan terus bertambah. M
 
 <hr>
 
+## Praktikum 2: Menerapkan Input Widget dan Forms
+
+![Menerapkan Input Widget dan Forms](./images/02.png)
+
+
+
 
 
 

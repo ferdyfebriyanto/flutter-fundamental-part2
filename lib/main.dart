@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_fundamental_3/basic_gesture/onLongPress.dart';
+import 'package:flutter_fundamental_3/basic_gesture/onTap.dart';
+import 'package:flutter_fundamental_3/forms.dart';
 
 void main() {
   runApp(const MyApp());
@@ -76,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: MyGestureOnTap(),
+      body: const FormContoh(),
     );
   }
 }
