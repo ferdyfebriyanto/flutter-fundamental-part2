@@ -1,16 +1,36 @@
-# gesture_input_widget
+# Flutter Fundamental - Bagian 3
 
-A new Flutter project.
+## Tujuan Praktikum
 
-## Getting Started
+Setelah menyelesaikan codelab ini Anda akan mampu untuk:
 
-This project is a starting point for a Flutter application.
+* Menerapkan jenis-jenis gesture
+* Menerapkan input widget dan controllernya
+* Menerapkan custom input dan FormField widget
 
-A few resources to get you started if this is your first Flutter project:
+## Praktikum 1: Menerapkan Gesture Detector
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Gesture Detector On Tap](./images/01.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Jika Anda coba klik/tap pada gambar, maka angka di bawah akan terus bertambah. Mengapa demikian?
+
+* Karena terdapat widget GestureDetector yang membungkus sebuah widget onTap yang berisi function _incrementCounter. Serta ada juga widget image dan widget text di GestureDetector ini. Sehingga jika di klik sekali maka akan menjalankan function _incrementCounter.
+
+### Eksperimen Jenis Gesture Lain
+
+#### On Double Tap
+
+![Gesture Detector On Double Tap](./images/01.2.png)
+
+* Pada gesture (On Double Tap) ini, kita perlu klik gambar sebanyak 2 kali untuk melakukan increment angka.
+
+![Gesture Detector On Long Press](./images/01.3.png)
+
+* Pada gesture (On Long Press) ini, kita perlu klik tahan agak lama untuk melakukan increment angka.
+
+<hr>
+
+
+
+
+

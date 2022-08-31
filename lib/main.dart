@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_fundamental_3/basic_widget/image_widget.dart';
+import 'package:flutter_fundamental_3/basic_gesture/onLongPress.dart';
 
 void main() {
   runApp(const MyApp());
@@ -76,20 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: Center(
-        child: GestureDetector(
-            onTap: _incrementCounter,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                const MyImageWidget(),
-                Text(
-                  '$_counter',
-                  style: Theme.of(context).textTheme.headline4,
-                ),
-              ],
-            )),
-      ),
+      body: MyGestureOnTap(),
     );
   }
 }
