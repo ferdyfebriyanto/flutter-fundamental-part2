@@ -24,6 +24,9 @@ Jika Anda coba klik/tap pada gambar, maka angka di bawah akan terus bertambah. M
 
 * Pada gesture (On Double Tap) ini, kita perlu klik gambar sebanyak 2 kali untuk melakukan increment angka.
 
+
+#### On Long Press
+
 ![Gesture Detector On Long Press](./images/01.3.png)
 
 * Pada gesture (On Long Press) ini, kita perlu klik tahan agak lama untuk melakukan increment angka.
